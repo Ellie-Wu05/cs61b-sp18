@@ -14,6 +14,8 @@ public class DebugExercise2 {
 
         int max = b & w | a & z;
         return max;
+
+
     }
 
 
@@ -60,7 +62,7 @@ public class DebugExercise2 {
         int i = 0;
         int sum = 0;
         while (i < x.length) {
-            sum = sum + add(sum, x[i]);
+            sum = sum+ add(sum, x[i]);
             i = i + 1;
         }
         return sum;
@@ -78,8 +80,8 @@ public class DebugExercise2 {
 
 
     public static void main(String[] args) {
-        int[] a = {1, 11, -1, -11};
-        int[] b = {3, -3, 2, -1};
+        int[] a = {2, 0, 10, 14};//{1, 11, -1, -11};
+        int[] b = {-5, 5, 20, 30};//{3, -3, 2, -1};
 
         int sumOfElementwiseMaxes = sumOfElementwiseMaxes(a, b);
         System.out.println(sumOfElementwiseMaxes);
